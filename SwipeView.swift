@@ -35,9 +35,6 @@ class SwipeView: UIView {
         addSubview(card)
         
         self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
-        
-//        card.setTranslatesAutoresizingMaskIntoConstraints(false)
-//        setConstraints()
     }
     
     func dragged(gestureRecognizer: UIPanGestureRecognizer) {
@@ -73,15 +70,4 @@ class SwipeView: UIView {
         })
         
     }
-    
-    // Utilized prior to added dragged function and others that handle cards location
-//    private func setConstraints () {
-//        
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Top, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Top, multiplier: 1.0, constant: 0))
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Bottom, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Bottom, multiplier: 1.0, constant: 0))
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Leading, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Leading, multiplier: 1.0, constant: 0))
-//        addConstraint(NSLayoutConstraint(item: card, attribute: NSLayoutAttribute.Trailing, relatedBy: NSLayoutRelation.Equal, toItem: self, attribute: NSLayoutAttribute.Trailing, multiplier: 1.0, constant: 0))
-    
-    //    }
-    
 }
