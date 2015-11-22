@@ -35,6 +35,7 @@ class SwipeView: UIView {
         addSubview(card)
         
         self.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: "dragged:"))
+        card.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
     }
     
     func dragged(gestureRecognizer: UIPanGestureRecognizer) {
@@ -49,7 +50,7 @@ class SwipeView: UIView {
         case UIGestureRecognizerState.Changed:
             let rotationPercentage = min(distance.x/(self.superview!.frame.width/2), 1)
             let rotationAngle = (CGFloat(2*M_PI/16)*rotationPercentage)
-            transform = CGAffineTransformRotate(transform, rotationAngle)
+            transform = CGAffineTransformMakeRotation(rotationAngle)
             
             center = CGPointMake(originalPoint!.x + distance.x, originalPoint!.y + distance.y)
             
