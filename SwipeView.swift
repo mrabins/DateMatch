@@ -17,6 +17,8 @@ class SwipeView: UIView {
         case Right
     }
     
+    weak var delegate: SwipeViewDelegate?
+    
     private let card: CardView = CardView ()
     
     private var originalPoint: CGPoint?
@@ -84,10 +86,16 @@ class SwipeView: UIView {
         if s == .Left {
             parentWidth *= -1
         }
-        UIView.animateWithDuration(0.2, animations: { () -> Void in
+         UIView.animateWithDuration(0.2, animations: {
             self.center.x = self.frame.origin.x + parentWidth
-        })
-        
+            }, completion: {
+                // Completion expects a boolean, that's what success is doing here, if true we run the next line
+                success in
+                if let d = self.delegate {
+                    s == .Right ? d.swipeRight() : d.swipeLeft ()
+                }
+         })
+      
     }
     
     private func resetViewPositionAndTransformations () {
@@ -96,6 +104,10 @@ class SwipeView: UIView {
             self.transform = CGAffineTransformMakeRotation(0)
 
         })
-        
     }
+}
+
+protocol SwipeViewDelegate: class {
+    func swipeLeft()
+    func swipeRight()
 }
