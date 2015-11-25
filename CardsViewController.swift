@@ -56,7 +56,6 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         return Card(cardView: cardView, swipeView: swipeView)
     }
 
-
     // Mark - SwipeViewDeletegate
     
     func swipeLeft() {
