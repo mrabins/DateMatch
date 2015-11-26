@@ -58,6 +58,7 @@
 		135CE6D41C06DE1900E5EB05 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		135CE6D61C06DE3F00E5EB05 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		135CE6D71C06DE3F00E5EB05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		135CE6DA1C06E0F500E5EB05 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		136E852D1BFBFCB600D979FA /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		13A77E951BF85196002B35E8 /* DateMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DateMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A77E991BF85196002B35E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				13A77E991BF85196002B35E8 /* Info.plist */,
+				135CE6DA1C06E0F500E5EB05 /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -442,6 +444,7 @@
 				INFOPLIST_FILE = DateMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DateMatch/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -457,6 +460,7 @@
 				INFOPLIST_FILE = DateMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DateMatch/Bridging-Header.h";
 			};
 			name = Release;
 		};
