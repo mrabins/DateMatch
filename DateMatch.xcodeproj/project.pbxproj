@@ -30,6 +30,7 @@
 		13A77EA51BF85196002B35E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A77EA41BF85196002B35E8 /* Images.xcassets */; };
 		13A77EA81BF85196002B35E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13A77EA61BF85196002B35E8 /* LaunchScreen.xib */; };
 		13A77EB41BF85196002B35E8 /* DateMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A77EB31BF85196002B35E8 /* DateMatchTests.swift */; };
+		603DF2D4045250FC6A6C5E57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD15DB47B378745A583EBDA7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,9 @@
 		13A77EAD1BF85196002B35E8 /* DateMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A77EB21BF85196002B35E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A77EB31BF85196002B35E8 /* DateMatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateMatchTests.swift; sourceTree = "<group>"; };
+		A1223429B8B310BA12481E60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		CA07DECD7BA2A2A53FF77CF9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FD15DB47B378745A583EBDA7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				135CE6C31C06DD4F00E5EB05 /* CFNetwork.framework in Frameworks */,
 				135CE6C11C06DD4700E5EB05 /* AudioToolbox.framework in Frameworks */,
 				135CE6D51C06DE1900E5EB05 /* ParseFacebookUtils.framework in Frameworks */,
+				603DF2D4045250FC6A6C5E57 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +153,8 @@
 				13A77E971BF85196002B35E8 /* DateMatch */,
 				13A77EB01BF85196002B35E8 /* DateMatchTests */,
 				13A77E961BF85196002B35E8 /* Products */,
+				8C828724A88A8CBAD5C76ED8 /* Pods */,
+				5C40ABE2CE4C10ED1D0D6A05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +212,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5C40ABE2CE4C10ED1D0D6A05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD15DB47B378745A583EBDA7 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C828724A88A8CBAD5C76ED8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1223429B8B310BA12481E60 /* Pods.debug.xcconfig */,
+				CA07DECD7BA2A2A53FF77CF9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,9 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13A77EB71BF85196002B35E8 /* Build configuration list for PBXNativeTarget "DateMatch" */;
 			buildPhases = (
+				C7BB5642B9910C03B9089A38 /* Check Pods Manifest.lock */,
 				13A77E911BF85196002B35E8 /* Sources */,
 				13A77E921BF85196002B35E8 /* Frameworks */,
 				13A77E931BF85196002B35E8 /* Resources */,
+				0126081428195F5239C85BCE /* Embed Pods Frameworks */,
+				AF1A8E0F0F8C8CFEB5A975C9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,6 +327,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0126081428195F5239C85BCE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF1A8E0F0F8C8CFEB5A975C9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7BB5642B9910C03B9089A38 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13A77E911BF85196002B35E8 /* Sources */ = {
@@ -434,6 +509,7 @@
 		};
 		13A77EB81BF85196002B35E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1223429B8B310BA12481E60 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -450,6 +526,7 @@
 		};
 		13A77EB91BF85196002B35E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA07DECD7BA2A2A53FF77CF9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
