@@ -65,7 +65,7 @@
 		13A77E991BF85196002B35E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A77E9A1BF85196002B35E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13A77E9D1BF85196002B35E8 /* DateMatch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DateMatch.xcdatamodel; sourceTree = "<group>"; };
-		13A77E9F1BF85196002B35E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13A77E9F1BF85196002B35E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = DateMatch/ViewController.swift; sourceTree = "<group>"; };
 		13A77EA21BF85196002B35E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13A77EA41BF85196002B35E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13A77EA71BF85196002B35E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -122,6 +122,7 @@
 		134716761BFBFC56007321E5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				13A77E9F1BF85196002B35E8 /* ViewController.swift */,
 				136E852D1BFBFCB600D979FA /* CardsViewController.swift */,
 			);
 			name = ViewControllers;
@@ -176,7 +177,6 @@
 				135CE6BB1C06DCE500E5EB05 /* Frameworks */,
 				134716761BFBFC56007321E5 /* ViewControllers */,
 				134716711BF93307007321E5 /* Views */,
-				13A77E9F1BF85196002B35E8 /* ViewController.swift */,
 				13A77EA11BF85196002B35E8 /* Main.storyboard */,
 				13A77EA41BF85196002B35E8 /* Images.xcassets */,
 				13A77EA61BF85196002B35E8 /* LaunchScreen.xib */,
@@ -282,6 +282,7 @@
 				TargetAttributes = {
 					13A77E941BF85196002B35E8 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 6EJU6X2H29;
 					};
 					13A77EAC1BF85196002B35E8 = {
 						CreatedOnToolsVersion = 6.2;
@@ -512,6 +513,8 @@
 			baseConfigurationReference = A1223429B8B310BA12481E60 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DateMatch",
@@ -520,6 +523,7 @@
 				INFOPLIST_FILE = DateMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DateMatch/Bridging-Header.h";
 			};
 			name = Debug;
@@ -529,6 +533,8 @@
 			baseConfigurationReference = CA07DECD7BA2A2A53FF77CF9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DateMatch",
@@ -537,6 +543,7 @@
 				INFOPLIST_FILE = DateMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DateMatch/Bridging-Header.h";
 			};
 			name = Release;
