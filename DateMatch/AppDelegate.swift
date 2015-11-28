@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let testObject = PFObject(classname: "TestObject")
         testObject["foo"] = "bar"
         testObject.save()
+        PFFacebookUtils.initializeFacebook()
         
         return true
     }
