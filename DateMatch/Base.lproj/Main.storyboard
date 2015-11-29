@@ -25,7 +25,7 @@
         <!--Log In View Controller-->
         <scene sceneID="9sX-85-w2c">
             <objects>
-                <viewController id="je5-MU-JCL" customClass="LogInViewController" customModule="DateMatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="je5-MU-JCL" customClass="LogInViewController" customModule="DateMatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6Sm-t1-4ST"/>
                         <viewControllerLayoutGuide type="bottom" id="JWI-Hn-UNx"/>
@@ -40,6 +40,9 @@
                                 <state key="normal" title="Login with Facebook">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedFBLogin:" destination="je5-MU-JCL" eventType="touchUpInside" id="bDv-Sx-kik"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -52,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KsT-CN-ESb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="387"/>
+            <point key="canvasLocation" x="942" y="337"/>
         </scene>
         <!--Cards View Controller-->
         <scene sceneID="LwY-pW-Dcw">
@@ -95,7 +98,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6Tb-lb-UZO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BpO-cz-yXg" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="CardsNavController" automaticallyAdjustsScrollViewInsets="NO" id="BpO-cz-yXg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dRD-7I-Ah1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
