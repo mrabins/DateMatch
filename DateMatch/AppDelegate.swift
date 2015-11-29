@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var initialViewController:UIViewController
         
-        if PFUser.currentUser() != nil {
+        if currentUser() != nil {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("CardsNavController") as UIViewController
         }
         else {
