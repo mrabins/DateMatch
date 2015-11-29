@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1312CA111C0AE12D004F35FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1312CA101C0AE12D004F35FD /* User.swift */; };
 		134716731BF9338F007321E5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134716721BF9338F007321E5 /* CardView.swift */; };
 		134716751BF9B1C1007321E5 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134716741BF9B1C1007321E5 /* SwipeView.swift */; };
 		135CE6C11C06DD4700E5EB05 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135CE6C01C06DD4700E5EB05 /* AudioToolbox.framework */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1312CA101C0AE12D004F35FD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		134716721BF9338F007321E5 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		134716741BF9B1C1007321E5 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
 		135CE6C01C06DD4700E5EB05 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1312CA0F1C0AE0F2004F35FD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1312CA101C0AE12D004F35FD /* User.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		134716711BF93307007321E5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +190,7 @@
 				135CE6BB1C06DCE500E5EB05 /* Frameworks */,
 				134716761BFBFC56007321E5 /* ViewControllers */,
 				134716711BF93307007321E5 /* Views */,
+				1312CA0F1C0AE0F2004F35FD /* Data */,
 				13A77EA11BF85196002B35E8 /* Main.storyboard */,
 				13A77EA41BF85196002B35E8 /* Images.xcassets */,
 				13A77EA61BF85196002B35E8 /* LaunchScreen.xib */,
@@ -389,6 +400,7 @@
 				13A77E9B1BF85196002B35E8 /* AppDelegate.swift in Sources */,
 				136E852E1BFBFCB600D979FA /* CardsViewController.swift in Sources */,
 				13E2A8F31C08FBD80000602F /* LogInViewController.swift in Sources */,
+				1312CA111C0AE12D004F35FD /* User.swift in Sources */,
 				134716731BF9338F007321E5 /* CardView.swift in Sources */,
 				134716751BF9B1C1007321E5 /* SwipeView.swift in Sources */,
 				13A77E9E1BF85196002B35E8 /* DateMatch.xcdatamodeld in Sources */,
