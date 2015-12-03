@@ -57,13 +57,7 @@ class LogInViewController: UIViewController {
                         user ["picture"] = imageFile
                         user.saveInBackgroundWithBlock(nil)
                     })
-                    user.saveInBackgroundWithBlock({
-                        success, error in
-                        println(success)
-                        println(error)
-                    })
                 })
-                
                 
             }
             else {
