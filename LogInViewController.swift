@@ -42,10 +42,23 @@ class LogInViewController: UIViewController {
                     var r = result as NSDictionary
                     user ["firstName"] = r["first_name"]
                     user ["gener"] = r ["gender"]
-                    user ["picture"] = ((r["picture"] as NSDictionary)["data"] as NSDictionary) ["url"]
                     var dateFormatter = NSDateFormatter()
                     dateFormatter.dateformat = "MM/dd/yyyy"
                     user ["birthday"] = dateformatter.dateFromString(r["birthday"] as String)
+                    
+                    let pictureURL = ((r["picture"] as NSDictionary)["data"] as NSDictionary) ["url"] as String
+                    let url = NSURL(string: pictureURL)
+                    let request = NSURLRequest(URL: url!)
+                    
+                    NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: {
+                        response, data, error in
+                        
+                        let imageFile = PFFile(name: "avatar.jpg", data: data)
+                        user ["picture"] = imageFile
+                        user.saveInBackgroundWithBlock(nil)
+                        
+                    })
+                    
                     user.saveInBackgroundWithBlock({
                         success, error in
                         println(success)
