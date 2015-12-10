@@ -40,6 +40,25 @@
             </objects>
             <point key="canvasLocation" x="942" y="337"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Jve-vd-DaS">
+            <objects>
+                <viewController storyboardIdentifier="PageController" id="buT-Ve-gZg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vxf-IN-aC5"/>
+                        <viewControllerLayoutGuide type="bottom" id="cGr-Vy-t9Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Bl-IX-MCm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0QK-bN-WIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="376"/>
+        </scene>
         <!--Cards View Controller-->
         <scene sceneID="LwY-pW-Dcw">
             <objects>
