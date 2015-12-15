@@ -11,8 +11,19 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var nameLabel: UILabel!
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationItem.titleView = UIImageView(image: UIImage(named: "profile-header"))
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage (named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToCards:")
+        navigationItem.setRightBarButtonItem(rightBarButtonItem, animated: true)
+    }
+    
+    func goToCards(button: UIBarButtonItem) {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
