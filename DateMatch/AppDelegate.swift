@@ -34,9 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if currentUser() != nil {
             
-            initialViewController = ViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: UIPageViewControllerNavigationOrientation.Horizontal, options: nil)
+            initialViewController = pageController
             
-            initialViewController = storyboard.instantiateViewControllerWithIdentifier("ProfileNavController") as UIViewController
         }
         else {
             initialViewController = storyboard.instantiateViewControllerWithIdentifier("LoginViewController") as UIViewController

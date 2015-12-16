@@ -20,10 +20,6 @@ class ProfileViewController: UIViewController {
         let rightBarButtonItem = UIBarButtonItem(image: UIImage (named: "nav-back-button"), style: UIBarButtonItemStyle.Plain, target: self, action: "goToCards:")
         navigationItem.setRightBarButtonItem(rightBarButtonItem, animated: true)
     }
-    
-    func goToCards(button: UIBarButtonItem) {
-        
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +34,15 @@ class ProfileViewController: UIViewController {
             self.imageView.image = image
         })
     }
-    
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func goToCards(button: UIBarButtonItem) {
+        pageController.goToNextVC()
+        
     }
     
 
