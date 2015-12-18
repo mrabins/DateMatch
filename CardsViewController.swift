@@ -18,8 +18,12 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     
     let frontCardTopMargin: CGFloat = 0
     let backCardTopMargin: CGFloat = 10
+
     
     @IBOutlet weak var cardStackView: UIView!
+    
+    @IBOutlet weak var nahButton: UIButton!
+    @IBOutlet weak var yeahButton: UIButton!
     
     var backCard: Card?
     var frontCard: Card?
@@ -39,6 +43,9 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         super.viewDidLoad()
 
         cardStackView.backgroundColor = UIColor.clearColor()
+        
+        nahButton.setImage(UIImage(named:"nah-button-pressed"), forState: UIControlState.Highlighted)
+        yeahButton.setImage(UIImage(named: "yeah-button-pressed"), forState: UIControlState.Highlighted)
         
         // Do any additional setup after loading the view.
         
@@ -61,6 +68,18 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func nahButtonPressed(sender: UIButton) {
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Left)
+        }
+    }
+    
+    @IBAction func yeahButtonPressed(sender: UIButton) {
+        if let card = frontCard {
+            card.swipeView.swipe(SwipeView.Direction.Right)
+        }
     }
     
     private func createCardFrame(topMargin: CGFloat) -> CGRect {
@@ -108,22 +127,25 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
         
     }
 
-    // Mark - SwipeViewDeletegate
+    // Mark - SwipeViewDelegate
     
-    func swipeLeft() {
+    func swipedLeft() {
         println("left")
         if let frontCard = frontCard {
             frontCard.swipeView.removeFromSuperview()
+            saveSkip(frontCard.user)
             switchCards()
         }
     }
     
-    func swipeRight() {
+    func swipedRight() {
         println("right")
         if let frontCard = frontCard {
             frontCard.swipeView.removeFromSuperview()
+            saveLike(frontCard.user)
             switchCards()
 
         }
     }
+    
 }
