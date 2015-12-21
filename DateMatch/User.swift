@@ -12,6 +12,7 @@ struct User {
     let id: String
     let name: String
     private let pfUser: PFUser
+    
 }
 
 func getPhoto (callback:(UIImage) -> ()) {
@@ -25,7 +26,7 @@ func getPhoto (callback:(UIImage) -> ()) {
     })
 }
 
-private func pfUserToUser(user: PFUser) -> User {
+func pfUserToUser(user: PFUser) -> User {
     return User(id: user.objectId, name: user.objectForKey("firstName") as String, pfUser: user)
 }
 
