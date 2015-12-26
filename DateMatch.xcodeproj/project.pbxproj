@@ -22,6 +22,9 @@
 		135CE6D51C06DE1900E5EB05 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135CE6D41C06DE1900E5EB05 /* ParseFacebookUtils.framework */; };
 		135CE6D81C06DE3F00E5EB05 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135CE6D61C06DE3F00E5EB05 /* Bolts.framework */; };
 		135CE6D91C06DE3F00E5EB05 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135CE6D71C06DE3F00E5EB05 /* Parse.framework */; };
+		136B47C71C2E71A600CEA14D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 136B47C61C2E71A600CEA14D /* libicucore.dylib */; };
+		136B47C91C2E71BC00CEA14D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 136B47C81C2E71BC00CEA14D /* libc++.dylib */; };
+		136B47CB1C2E723200CEA14D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136B47CA1C2E723200CEA14D /* Message.swift */; };
 		139071971C2E579400EA96B8 /* MatchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139071961C2E579400EA96B8 /* MatchesTableViewController.swift */; };
 		139C4A561C27E24F003FDB14 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139C4A551C27E24F003FDB14 /* Match.swift */; };
 		139C4A581C27EC67003FDB14 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 139C4A571C27EC67003FDB14 /* MobileCoreServices.framework */; };
@@ -54,6 +57,9 @@
 		135CE6D41C06DE1900E5EB05 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		135CE6D61C06DE3F00E5EB05 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		135CE6D71C06DE3F00E5EB05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		136B47C61C2E71A600CEA14D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		136B47C81C2E71BC00CEA14D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		136B47CA1C2E723200CEA14D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		139071961C2E579400EA96B8 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchesTableViewController.swift; path = DateMatch/MatchesTableViewController.swift; sourceTree = "<group>"; };
 		139C4A551C27E24F003FDB14 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		139C4A571C27EC67003FDB14 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCoreServices.framework; sourceTree = "<group>"; };
@@ -84,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				136B47C91C2E71BC00CEA14D /* libc++.dylib in Frameworks */,
+				136B47C71C2E71A600CEA14D /* libicucore.dylib in Frameworks */,
 				135CE6D31C06DD8A00E5EB05 /* libsqlite3.tbd in Frameworks */,
 				135CE6D11C06DD8100E5EB05 /* libz.tbd in Frameworks */,
 				135CE6CF1C06DD7A00E5EB05 /* SystemConfiguration.framework in Frameworks */,
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				1312CA101C0AE12D004F35FD /* User.swift */,
+				136B47CA1C2E723200CEA14D /* Message.swift */,
 				139C4A551C27E24F003FDB14 /* Match.swift */,
 			);
 			name = Data;
@@ -226,6 +235,8 @@
 		5C40ABE2CE4C10ED1D0D6A05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				136B47C81C2E71BC00CEA14D /* libc++.dylib */,
+				136B47C61C2E71A600CEA14D /* libicucore.dylib */,
 				FD15DB47B378745A583EBDA7 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -374,6 +385,7 @@
 				134716751BF9B1C1007321E5 /* SwipeView.swift in Sources */,
 				13C5155D1C2E582E003C471F /* ChatViewController.swift in Sources */,
 				13A77E9E1BF85196002B35E8 /* DateMatch.xcdatamodeld in Sources */,
+				136B47CB1C2E723200CEA14D /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,8 +502,11 @@
 					"$(PROJECT_DIR)/DateMatch",
 					"$(PROJECT_DIR)",
 				);
+				GENERATE_PROFILING_CODE = NO;
 				INFOPLIST_FILE = DateMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DateMatch/Bridging-Header.h";
@@ -510,8 +525,11 @@
 					"$(PROJECT_DIR)/DateMatch",
 					"$(PROJECT_DIR)",
 				);
+				GENERATE_PROFILING_CODE = NO;
 				INFOPLIST_FILE = DateMatch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DateMatch/Bridging-Header.h";

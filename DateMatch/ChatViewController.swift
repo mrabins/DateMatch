@@ -13,6 +13,8 @@ class ChatViewController: JSQMessagesViewController {
     
     var messages: [JSQMessage] = []
     
+    var matchID: String?
+    
     let outgoingBubble = JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImageWithColor(UIColor.jsq_messagesBubbleBlueColor())
     
     let incomingBubble = JSQMessagesBubbleImageFactory().incomingMessagesBubbleImageWithCollor(UIColor.jsq_messageBubbleLightGreyColor())
@@ -62,7 +64,14 @@ class ChatViewController: JSQMessagesViewController {
         
         let m = JSQMessage(senderId: senderId, senderDisplayName: senderDisplayName, date: date, text: text)
         self.messages.append(m)
+        
+        if let id = matchID {
+            saveMessage(id, Message(messages: text, senderID: senderID, date: date))
+        }
+        
         finishSendingMessage()
+        
+        
     }
     
     
