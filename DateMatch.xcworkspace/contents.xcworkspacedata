@@ -2,12 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:UserCell.swift">
-   </FileRef>
-   <FileRef
-      location = "group:DateMatch/MatchesTableViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:DateMatch.xcodeproj">
    </FileRef>
    <FileRef
