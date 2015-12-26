@@ -28,10 +28,7 @@
 		13A77E9B1BF85196002B35E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A77E9A1BF85196002B35E8 /* AppDelegate.swift */; };
 		13A77E9E1BF85196002B35E8 /* DateMatch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13A77E9C1BF85196002B35E8 /* DateMatch.xcdatamodeld */; };
 		13A77EA01BF85196002B35E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A77E9F1BF85196002B35E8 /* ViewController.swift */; };
-		13A77EA31BF85196002B35E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A77EA11BF85196002B35E8 /* Main.storyboard */; };
 		13A77EA51BF85196002B35E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A77EA41BF85196002B35E8 /* Images.xcassets */; };
-		13A77EA81BF85196002B35E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13A77EA61BF85196002B35E8 /* LaunchScreen.xib */; };
-		13A77EB41BF85196002B35E8 /* DateMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A77EB31BF85196002B35E8 /* DateMatchTests.swift */; };
 		13BD81131C0BA70100BB1B64 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BD81121C0BA70100BB1B64 /* ProfileViewController.swift */; };
 		13C5155D1C2E582E003C471F /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5155C1C2E582E003C471F /* ChatViewController.swift */; };
 		13C5155F1C2E5846003C471F /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C5155E1C2E5846003C471F /* CardsViewController.swift */; };
@@ -40,16 +37,6 @@
 		13E2A8F31C08FBD80000602F /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E2A8F21C08FBD80000602F /* LogInViewController.swift */; };
 		603DF2D4045250FC6A6C5E57 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD15DB47B378745A583EBDA7 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		13A77EAE1BF85196002B35E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 13A77E8D1BF85196002B35E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 13A77E941BF85196002B35E8;
-			remoteInfo = DateMatch;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1312CA101C0AE12D004F35FD /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -67,7 +54,6 @@
 		135CE6D41C06DE1900E5EB05 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		135CE6D61C06DE3F00E5EB05 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		135CE6D71C06DE3F00E5EB05 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		135CE6DA1C06E0F500E5EB05 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		139071961C2E579400EA96B8 /* MatchesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MatchesTableViewController.swift; path = DateMatch/MatchesTableViewController.swift; sourceTree = "<group>"; };
 		139C4A551C27E24F003FDB14 /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		139C4A571C27EC67003FDB14 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCoreServices.framework; sourceTree = "<group>"; };
@@ -79,7 +65,6 @@
 		13A77EA21BF85196002B35E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13A77EA41BF85196002B35E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13A77EA71BF85196002B35E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13A77EAD1BF85196002B35E8 /* DateMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DateMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A77EB21BF85196002B35E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A77EB31BF85196002B35E8 /* DateMatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateMatchTests.swift; sourceTree = "<group>"; };
 		13BD81121C0BA70100BB1B64 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = DateMatch/ProfileViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +72,7 @@
 		13C5155E1C2E5846003C471F /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardsViewController.swift; path = DateMatch/CardsViewController.swift; sourceTree = "<group>"; };
 		13C515601C2E5881003C471F /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		13C515621C2E589D003C471F /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = DateMatch/CardView.swift; sourceTree = "<group>"; };
+		13C515641C2E6936003C471F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "../Bridging-Header.h"; sourceTree = "<group>"; };
 		13E2A8F21C08FBD80000602F /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		A1223429B8B310BA12481E60 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CA07DECD7BA2A2A53FF77CF9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,13 +99,6 @@
 				135CE6C11C06DD4700E5EB05 /* AudioToolbox.framework in Frameworks */,
 				135CE6D51C06DE1900E5EB05 /* ParseFacebookUtils.framework in Frameworks */,
 				603DF2D4045250FC6A6C5E57 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13A77EAA1BF85196002B35E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				13A77E951BF85196002B35E8 /* DateMatch.app */,
-				13A77EAD1BF85196002B35E8 /* DateMatchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,8 +200,8 @@
 		13A77E981BF85196002B35E8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				13C515641C2E6936003C471F /* Bridging-Header.h */,
 				13A77E991BF85196002B35E8 /* Info.plist */,
-				135CE6DA1C06E0F500E5EB05 /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -285,24 +263,6 @@
 			productReference = 13A77E951BF85196002B35E8 /* DateMatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		13A77EAC1BF85196002B35E8 /* DateMatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 13A77EBA1BF85196002B35E8 /* Build configuration list for PBXNativeTarget "DateMatchTests" */;
-			buildPhases = (
-				13A77EA91BF85196002B35E8 /* Sources */,
-				13A77EAA1BF85196002B35E8 /* Frameworks */,
-				13A77EAB1BF85196002B35E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				13A77EAF1BF85196002B35E8 /* PBXTargetDependency */,
-			);
-			name = DateMatchTests;
-			productName = DateMatchTests;
-			productReference = 13A77EAD1BF85196002B35E8 /* DateMatchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -316,10 +276,6 @@
 					13A77E941BF85196002B35E8 = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 6EJU6X2H29;
-					};
-					13A77EAC1BF85196002B35E8 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13A77E941BF85196002B35E8;
 					};
 				};
 			};
@@ -337,7 +293,6 @@
 			projectRoot = "";
 			targets = (
 				13A77E941BF85196002B35E8 /* DateMatch */,
-				13A77EAC1BF85196002B35E8 /* DateMatchTests */,
 			);
 		};
 /* End PBXProject section */
@@ -347,16 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A77EA31BF85196002B35E8 /* Main.storyboard in Resources */,
-				13A77EA81BF85196002B35E8 /* LaunchScreen.xib in Resources */,
 				13A77EA51BF85196002B35E8 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13A77EAB1BF85196002B35E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,23 +377,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		13A77EA91BF85196002B35E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13A77EB41BF85196002B35E8 /* DateMatchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		13A77EAF1BF85196002B35E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 13A77E941BF85196002B35E8 /* DateMatch */;
-			targetProxy = 13A77EAE1BF85196002B35E8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		13A77EA11BF85196002B35E8 /* Main.storyboard */ = {
@@ -588,40 +518,6 @@
 			};
 			name = Release;
 		};
-		13A77EBB1BF85196002B35E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DateMatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateMatch.app/DateMatch";
-			};
-			name = Debug;
-		};
-		13A77EBC1BF85196002B35E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DateMatchTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DateMatch.app/DateMatch";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -639,15 +535,6 @@
 			buildConfigurations = (
 				13A77EB81BF85196002B35E8 /* Debug */,
 				13A77EB91BF85196002B35E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		13A77EBA1BF85196002B35E8 /* Build configuration list for PBXNativeTarget "DateMatchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				13A77EBB1BF85196002B35E8 /* Debug */,
-				13A77EBC1BF85196002B35E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
