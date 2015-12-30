@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class ChatViewController: JSQMessagesViewController {
     
     var messages: [JSQMessage] = []
