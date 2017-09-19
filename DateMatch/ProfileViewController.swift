@@ -44,6 +44,4 @@ class ProfileViewController: UIViewController {
         pageController.goToNextVC()
         
     }
-    
-
 }

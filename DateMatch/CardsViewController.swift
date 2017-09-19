@@ -21,7 +21,6 @@ class CardsViewController: UIViewController, SwipeViewDelegate {
 
     
     @IBOutlet weak var cardStackView: UIView!
-    
     @IBOutlet weak var nahButton: UIButton!
     @IBOutlet weak var yeahButton: UIButton!
     

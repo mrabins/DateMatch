@@ -40,7 +40,7 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     // Mark: UIPageViewControllerDataSource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
@@ -54,9 +54,8 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
             return cardsVC
         default:
             return nil
-
         }
-}
+    }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         switch viewController {
@@ -66,10 +65,6 @@ class ViewController: UIPageViewController, UIPageViewControllerDataSource {
             return cardsVC
         default:
             return nil
-            
         }
-        
     }
-
 }
-

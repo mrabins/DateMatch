@@ -37,7 +37,6 @@ class ChatViewController: JSQMessagesViewController {
                 self.finishReceivingMessage()
             })
         }
-        
     }
     
     override func viewWillAppear(animate: Bool) {
@@ -61,7 +60,6 @@ class ChatViewController: JSQMessagesViewController {
     
     func senderID() -> String! {
         return currentUser()!.id
-        
     }
     
     override func collectionView(collectionView: JSQMessagesViewController!, messageDataForItemAtIndexPeth indexPath: NSIndexPath!) -> JSQMessageData! {
@@ -92,11 +90,6 @@ class ChatViewController: JSQMessagesViewController {
         if let id = matchID {
             saveMessage(id, Message(messages: text, senderID: senderID, date: date))
         }
-        
         finishSendingMessage()
-        
-        
     }
-    
-    
 }

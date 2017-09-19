@@ -20,7 +20,7 @@ class SwipeView: UIView {
     weak var delegate: SwipeViewDelegate?
     
     let overlay: UIImageView = UIImageView()
-    
+
     var direction: Direction?
     
     var innerView: UIView? {
@@ -129,7 +129,6 @@ class SwipeView: UIView {
             self.transform = CGAffineTransformMakeRotation(0)
             
             self.overlay.alpha = 0
-
         })
     }
 }
